@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import fs from 'node:fs';
-import path from 'node:path';
-import yaml from 'yaml';
-import chalk from 'chalk';
-import { glob } from 'glob';
+const fs = require('node:fs');
+const path = require('node:path');
+const yaml = require('yaml');
+const chalk = require('chalk');
+const { glob } = require('glob');
 
 const SKILLS_DIR = path.join(__dirname, '..', 'skills');
 
