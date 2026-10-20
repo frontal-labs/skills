@@ -36,10 +36,15 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "yaml": "^2.3.4",
     "chalk": "^4.1.2",
-    "glob": "^10.3.10",
-    "markdownlint-cli": "^0.37.0"
+    "glob": "^10.5.0",
+    "markdownlint-cli": "^0.49.1",
+    "yaml": "^2.3.4"
+  },
+  "overrides": {
+    "js-yaml": "5.4.1",
+    "smol-toml": "1.9.1",
+    "katex": "0.18.2"
   },
   "files": [
     "skills/",
