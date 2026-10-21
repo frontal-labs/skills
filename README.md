@@ -1,5 +1,7 @@
 # Frontal Skills
 
+![Frontal Banner](./banner.png)
+
 A production-grade collection of [Agent Skills](https://skills.sh) for building with the
 [Frontal TypeScript SDK](https://github.com/frontal-labs/sdk-ts) ecosystem (`@frontal-labs/*`).
 
