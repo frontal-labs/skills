@@ -1,0 +1,17 @@
+[project]
+name = "frontal-app"
+version = "0.1.0"
+description = "Application that calls the Frontal API through the frontal Python SDK"
+requires-python = ">=3.9"
+dependencies = [
+    "frontal>=1.0.0,<2",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.3,<10",
+    "respx>=0.22",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,20 @@
+[package]
+name = "frontal-app"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+publish = false
+
+[dependencies]
+# Default features enable all 17 services plus "stream". Narrow the list to what you use.
+frontal = { version = "1", default-features = false, features = ["agents", "functions"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+# For SSE (agents().watch_run), add "stream" to frontal's features and uncomment:
+# futures-util = "0.3"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
